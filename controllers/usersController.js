@@ -30,6 +30,8 @@ const createUser = async (req, res) => {
   }
 };
 
+
+
 const getAllUsers = async (req, res) => {
   const users = await User.find({}, { name: 1, email: 1 });
 
